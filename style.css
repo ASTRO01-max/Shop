@@ -1,0 +1,138 @@
+:root {
+  --bg: #eceaec;
+  --header-bg: #f5f5f5;
+  --text-main: #111111;
+  --text-muted: #616161;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--text-main);
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(1280px, calc(100% - 120px));
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--header-bg);
+}
+
+.header__wrapper {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  width: 159px;
+  height: auto;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.login__btn,
+.register__btn {
+  min-width: 168px;
+  height: 42px;
+  border-radius: 999px;
+  background: var(--black);
+  display: inline-flex;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  position: relative;
+}
+
+.main,
+.hero {
+  background: var(--bg);
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero__wrapper {
+  min-height: 663px;
+  display: grid;
+  grid-template-columns: minmax(450px, 1fr) minmax(560px, 1.1fr);
+  align-items: end;
+}
+
+.hero__left {
+  padding: 72px 0 88px;
+}
+
+.hero__title {
+  max-width: 520px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(52px, 5.1vw, 72px);
+  line-height: 0.95;
+  letter-spacing: 0.3px;
+  margin-bottom: 22px;
+}
+
+.hero__text {
+  max-width: 520px;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.42;
+  margin-bottom: 22px;
+}
+
+.hero__left .login__btn {
+  min-width: 164px;
+  height: 44px;
+}
+
+.hero__right {
+  position: relative;
+  min-height: 663px;
+  overflow: hidden;
+}
+
+.hero__img {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+
